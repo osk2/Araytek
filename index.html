@@ -89,7 +89,7 @@
 			<div class="container">
 				<div class="col-lg-8 col-lg-offset-2">
 					<h2 class="title-shadow">Service</h2>
-					<p class="title-shadow" style="display: block">Router Solution, IoT device, Cloud Service.</p>
+					<p class="title-shadow" style="display: block">Router Solution | IoT device | Cloud Service</p>
 				</div>
 			</div>
 		</div>
@@ -103,35 +103,25 @@
 				<p>
 					<a href="mailto:service@araytek.net">hello@araytek.net</a>
 				</p>
-<!-- 				<ul class="list-inline banner-social-buttons">
-					<li>
-						<a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-					</li>
-					<li>
-						<a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-					</li>
-					<li>
-						<a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-					</li>
-				</ul> -->
 			</div>
 		</div>
 	</section>
 
-	<!-- <div id="map"></div> -->
-
 	<footer>
 		<div class="container text-center">
-			<p>Copyright &copy; Araytek 2014</p>
+			<p>Copyright &copy; Araytek <span class="year-text"></span></p>
 		</div>
 	</footer>
 
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.easing.min.js"></script>
-	<!-- Google Maps API can be found at https://developers.google.com/maps/ -->
-	<!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script> -->
 	<script src="js/grayscale.js"></script>
-	
+	<script>
+		$(function() {
+			var date = new Date();
+			$('.year-text').text(date.getFullYear());
+		});
+	</script>
 </body>
 </html>
